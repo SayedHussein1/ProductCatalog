@@ -1,0 +1,13 @@
+F:\ProductCatalog\Libraries\App.Application\bin\Debug\netcoreapp3.1\App.Application.deps.json
+F:\ProductCatalog\Libraries\App.Application\bin\Debug\netcoreapp3.1\App.Application.dll
+F:\ProductCatalog\Libraries\App.Application\bin\Debug\netcoreapp3.1\App.Application.pdb
+F:\ProductCatalog\Libraries\App.Application\bin\Debug\netcoreapp3.1\App.Domain.dll
+F:\ProductCatalog\Libraries\App.Application\bin\Debug\netcoreapp3.1\App.Domain.pdb
+F:\ProductCatalog\Libraries\App.Application\obj\Debug\netcoreapp3.1\App.Application.csproj.AssemblyReference.cache
+F:\ProductCatalog\Libraries\App.Application\obj\Debug\netcoreapp3.1\App.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\ProductCatalog\Libraries\App.Application\obj\Debug\netcoreapp3.1\App.Application.AssemblyInfoInputs.cache
+F:\ProductCatalog\Libraries\App.Application\obj\Debug\netcoreapp3.1\App.Application.AssemblyInfo.cs
+F:\ProductCatalog\Libraries\App.Application\obj\Debug\netcoreapp3.1\App.Application.csproj.CoreCompileInputs.cache
+F:\ProductCatalog\Libraries\App.Application\obj\Debug\netcoreapp3.1\App.Application.csproj.CopyComplete
+F:\ProductCatalog\Libraries\App.Application\obj\Debug\netcoreapp3.1\App.Application.dll
+F:\ProductCatalog\Libraries\App.Application\obj\Debug\netcoreapp3.1\App.Application.pdb

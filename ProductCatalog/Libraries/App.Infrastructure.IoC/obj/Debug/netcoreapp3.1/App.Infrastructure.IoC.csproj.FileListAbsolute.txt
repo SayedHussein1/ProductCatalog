@@ -1,0 +1,17 @@
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Infrastructure.IoC.deps.json
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Infrastructure.IoC.dll
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Infrastructure.IoC.pdb
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Application.dll
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Domain.dll
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Infra.Data.dll
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Application.pdb
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Domain.pdb
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\bin\Debug\netcoreapp3.1\App.Infra.Data.pdb
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\obj\Debug\netcoreapp3.1\App.Infrastructure.IoC.csproj.AssemblyReference.cache
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\obj\Debug\netcoreapp3.1\App.Infrastructure.IoC.GeneratedMSBuildEditorConfig.editorconfig
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\obj\Debug\netcoreapp3.1\App.Infrastructure.IoC.AssemblyInfoInputs.cache
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\obj\Debug\netcoreapp3.1\App.Infrastructure.IoC.AssemblyInfo.cs
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\obj\Debug\netcoreapp3.1\App.Infrastructure.IoC.csproj.CoreCompileInputs.cache
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\obj\Debug\netcoreapp3.1\App.Infrastructure.IoC.csproj.CopyComplete
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\obj\Debug\netcoreapp3.1\App.Infrastructure.IoC.dll
+F:\ProductCatalog\Libraries\App.Infrastructure.IoC\obj\Debug\netcoreapp3.1\App.Infrastructure.IoC.pdb

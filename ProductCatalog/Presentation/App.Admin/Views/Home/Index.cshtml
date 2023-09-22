@@ -1,0 +1,93 @@
+﻿@model HomePageModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+@using Microsoft.AspNetCore.Authentication
+
+<!-- Page header -->
+<div class="page-header page-header-light">
+    <div class="page-header-content header-elements-md-inline">
+        <div class="page-title d-flex">
+            <h4>
+                <i class="icon-home4 mr-2"></i> <span class="font-weight-semibold">@Translate("admin.Dashboard").Text</span>
+            </h4>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="card-body">
+    <div class="form-row mb-3">
+        <div class="col-md-2 mb-1">
+            <label for="CategoryId">@Translate("Categories").Text</label>
+            <select id="CategoryId" class="form-control">
+                @foreach (var category in Model.CategoryList)
+                {
+                    <option value="@category.Value">@category.Text</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-md-2" style="padding-top: 30px !important;">
+            <button id="search-button" class="btn btn-danger">
+                <i class="icon-search4 mr-2"></i> @Translate("admin.Search").Text
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<!-- /page header -->
+<div class="content">
+    <div class="container">
+        <div class="row" id="product-gallery">
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        
+        function loadProducts(categoryId) {
+            var url = "/Products/GetProducts";
+            if (categoryId) {
+                url += "?categoryId=" + categoryId;
+            }
+            $.ajax({
+                url: url,
+                method: "GET",
+                success: function (data) {
+                    $("#product-gallery").empty(); 
+                    data.forEach(function (product) {
+                        var productCard = `
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <img src="${product.ImageUrl}" alt="${product.Title}" class="card-img-top">
+                                            <div class="card-body">
+                                                <h5 class="card-title">${product.Title}</h5>
+                                                <p class="card-title">Category: ${product.CategoryName}</p>
+                                                <p class="card-text">Price: ${product.Price}</p>
+                                                <p class="card-text">Duration: ${product.Duration}</p>
+                                                <p class="card-text">Start Date: ${product.StartDate}</p>
+                                            </div>
+                                        </div>
+                                    </div>`;
+                        $("#product-gallery").append(productCard);
+                    });
+                },
+                error: function (error) {
+                    console.error("Error loading products: " + error.statusText);
+                }
+            });
+        }
+
+        loadProducts(null);
+
+        $("#search-button").click(function () {
+            var categoryId = $("#CategoryId").val(); 
+            loadProducts(categoryId);
+        });
+    });
+</script>
+

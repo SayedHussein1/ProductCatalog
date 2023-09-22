@@ -1,0 +1,95 @@
+﻿@model ProductsModel
+@{
+
+    ViewBag.Title = Translate("admin.Products").Text;
+    int admin =0;
+    admin = User.IsInRole("Administrator") ? 1 : 0;
+}
+<!-- Page header -->
+<div class="page-header page-header-light">
+    <div class="page-header-content header-elements-md-inline">
+        <div class="page-title d-flex">
+            <h4>
+                <i class="icon-images3 mr-2"></i> <span class="font-weight-semibold">@Translate("admin.Products").Text </span>
+            </h4>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+        </div>
+    </div>
+    <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+        <div class="d-flex">
+            <div class="breadcrumb">
+                <a asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="icon-home2 mr-2"></i>@Translate("admin.Home").Text   </a>
+                <a asp-controller="Products" asp-action="Index" class="breadcrumb-item"> <span class="breadcrumb-item active">@Translate("admin.Products").Text </span></a>
+               
+            </div>
+            <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>&nbsp;
+        </div>
+    </div>
+</div>
+<!-- /page header -->
+<div class="content">
+    <input type="hidden" id="isAdmin" value="@admin" />
+    <div class="card">
+        <div class="card-header header-elements-inline">
+            <h5 class="card-title">@Translate("admin.Products").Text  </h5>
+
+            @if (User.IsInRole("Administrator"))
+            {
+                <div class="header-elements">
+                    <a asp-controller="Products" asp-action="AddEdit" class="btn btn-info">
+                        <i class="icon-file-plus mr-2"></i>
+                        @Translate("admin.AddProducts").Text
+                    </a>
+                </div>
+            }
+       
+        </div>
+        <div class="card-body">
+            <div class="form-row">
+                <div class="col-md-3 mb-1">
+                    <label for="validationCustom01"> @Translate("admin.Status").Text </label>
+                    <select class="form-control select2" id="StatusId">
+                        <option value="0">@Translate("admin.All").Text </option>
+                        <option value="1">@Translate("published").Text </option>
+                        <option value="2">@Translate("notpublished").Text </option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-1">
+                    <label for="validationCustom01">@Translate("admin.Category").Text</label>
+                    <select asp-for="CategoryId" asp-items="@Model.CategoryList" class="form-control select2">
+                    </select>
+                </div> 
+                <div class="col-md-3" style="padding-top: 30px !important;">
+                    <button onclick="RefreshTable()" class="btn btn-danger">
+                        <i class="icon-search4 mr-2"></i>
+                        @Translate("admin.Search").Text
+                    </button>
+                </div>
+            </div>
+            
+            <table id="table" class="table datatable-button-html5-basic">
+                <thead>
+                    <tr>
+                        <th>@Translate("admin.Title").Text </th>
+                        <th>@Translate("admin.Category").Text </th>
+                        <th>@Translate("admin.CreateByUser").Text </th>
+
+                        <th>@Translate("admin.Price").Text </th>
+                        <th>@Translate("admin.Duration").Text </th>
+                        <th>@Translate("admin.StartDate").Text </th>
+
+                        <th>@Translate("admin.CreateDate").Text </th>
+                        <th>@Translate("admin.Status").Text  </th>
+
+                             <th>@Translate("admin.Options").Text  </th>
+
+                        
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+ 
+</div>
+<script src="~/ViewScripts/Products/Products.js"></script>

@@ -1,0 +1,89 @@
+@media (min-width: 992px) {
+    .col-form-label {
+        text-align: right;
+    }
+}
+
+* {
+    font-family: 'Cairo', sans-serif;
+}
+
+a > .attach-type img {
+    background: #9bd5a2;
+}
+
+.attach-type {
+    padding: .75rem 0 0.5rem;
+    text-align: center;
+}
+
+    .attach-type img {
+        background: #e8e8e8;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+.field-validation-error {
+    color: red !important;
+}
+
+.error {
+    color: red !important;
+}
+
+body.swal2-shown {
+    padding-right: 0 !important;
+}
+
+.navbar-brand {
+    font-size: initial;
+}
+
+    .navbar-brand a {
+        color: #fff;
+    }
+
+.login-bg { /* background: url('../../global_assets/images/login-bg.jpg') no-repeat center center; */
+    background-size: cover;
+}
+
+    .login-bg .card {
+        border: 1px solid #8c8c8c;
+        box-shadow: rgba(0,0,0,.5) 0px 0px 10px;
+    }
+
+a {
+    color: #00a8b7;
+}
+
+@media (min-width:576px) {
+    .col-sm-2-10 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+input:read-only {
+    background-color: yellow;
+}
+
+.danger {
+    color: red !important;
+    font-weight: 700 !important;
+}
+.blockOverlay, .blockElement {
+    background-color: transparent !important;
+}
+.note-editor.note-frame.card {
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .1875rem;
+}
+.modal-header.bg-info-700 {
+    background-color: #6EFFD5 !important;
+    color: black !important;
+}
+button.cancel.btn.btn-lg.btn-default {
+    background-color: #dbdbdb !important;
+}
