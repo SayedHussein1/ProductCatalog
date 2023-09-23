@@ -18,7 +18,7 @@ namespace App.Infra.Data.Configuration
             entity.HasData(new Attachment
             {
                AttachmentId = 1,
-               FileName = "3_PIC_3.jpg",
+               FileName = "11_2_PIC_2.jpg",
                FileExtension = ".jpg",
                FileSize = 4331, 
                MimeTypeValue = "image/jpeg"
@@ -28,7 +28,7 @@ namespace App.Infra.Data.Configuration
             new Attachment
             {
                 AttachmentId = 2,
-                FileName = "4_PIC_4.jpg",
+                FileName = "3_PIC_1.jpg",
                 FileExtension = ".jpg",
                 FileSize = 5746,
                 MimeTypeValue = "image/jpeg"
@@ -39,7 +39,7 @@ namespace App.Infra.Data.Configuration
             new Attachment
             {
                 AttachmentId = 3,
-                FileName = "1_PIC_1.jpg",
+                FileName = "4_PIC_4.jpg",
                 FileExtension = ".jpg",
                 FileSize = 5118,
                 MimeTypeValue = "image/jpeg"
@@ -50,7 +50,7 @@ namespace App.Infra.Data.Configuration
             new Attachment
             {
                 AttachmentId = 4,
-                FileName = "3_PIC_3.jpg",
+                FileName = "9_1_PIC_1.jpg",
                 FileExtension = ".jpg",
                 FileSize = 4331,
                 MimeTypeValue = "image/jpeg"
