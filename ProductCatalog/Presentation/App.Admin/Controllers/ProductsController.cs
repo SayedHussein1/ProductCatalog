@@ -145,7 +145,7 @@ namespace App.Admin.Controllers
 
         public IActionResult GetProducts(int categoryId)
         {
-            var loggedUserIsAdmin = User.IsInRole("Adminitstrator");
+            var loggedUserIsAdmin = User.IsInRole("Administrator");
 
             var data = _productsSevices.LoadDataForHomePage(loggedUserIsAdmin, categoryId);
 
